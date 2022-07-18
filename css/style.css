@@ -57,6 +57,7 @@ html {
 *::after{
     box-sizing: inherit;
 }
+
     /* headear */
     .header {
         border-bottom: 1px solid rgba(236, 236, 236, 1);
@@ -80,8 +81,6 @@ html {
     .logo-span,
     .nav-link:focus,
     .nav-link:hover,
-    /* .nav-contact:focus,
-    .nav-contact:hover, */
     .footer-contact:hover,
     .footer-contact:focus
     {
@@ -116,25 +115,37 @@ html {
 
         background-color: var(--acent-color);
     }
-    .nav-contact 
-    {
+    .contact-list a {
         color: var(--primery-text-color);
+
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.1;
         letter-spacing: 0.02em;
-        
+    }
+    .nav-contact 
+    {        
         display: flex;
         align-items: center;
     }
-    .contact-icon {
-        fill: currentColor;
-        margin-right: 10px;
+    .contact-list .nav-contact:focus,
+    .contact-list .nav-contact:hover,
+    .contact-icon:focus,
+    .contact-icon:hover {
+        color: var(--accent-color);
+        fill: var(--accent-color);
     }
-    .nav-contact:focus,
-    .nav-contact:hover  { 
-        color: var(--acent-color);
+    .list-item {
+        margin-right: 54px;
+    }
+    .list-item:last-child {
+        margin-right: 0;
+    }
+    .contact-icon {
+        margin-right: 10px;
+        fill: currentColor;
+    
     }
     .header-nav{
         margin-bottom: 0;
@@ -143,7 +154,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        /* align-items: baseline; */
     }
     .nav-list {
         display: flex;
